@@ -27,9 +27,41 @@ a {
 
 /* BEM Methodology (Block, Element, Modifier) */
 
+/* Header */
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.elements p, .info span {
+    margin: 0;
+    padding: 0 5px;
+}
+
 /* Menu */
 
 section.menu {}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu__list__item {
+    margin-right: 10px;
+}
+
+.menu__list__item:last-child {
+    margin-right: 0;
+}
 
 /* Title */
 

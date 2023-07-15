@@ -18,9 +18,27 @@
     <div class="all">
         <section class="menu">
             <header>
+                <!-- Game of Life -->
+                <div class="gameScreen">
+                    <canvas id="canvas" width="400" height="400"></canvas>
+                    <div class="info">
+                        <div class="elements">
+                            <!-- <h3>John Conway's Game Of Life</h3> -->
+                            <p>Count:</p>
+                            <span id="drawCount">0</span>
+                            <p>Timestamp:</p>
+                            <span id="timestamp">0</span>
+                            <p>Progress:</p>
+                            <span id="progress">0</span>
+                        </div>
+                    </div>
+                </div>
+
                 <img src="assets\vector.png">
                 <h3 class="menu__title">willowitzy</h3>
             </header>
+
+            <!-- Nav Bar -->
             <nav>
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#aboutme">About</a></li>
@@ -30,11 +48,10 @@
                     <li class="menu__list__item"><a href="#xp">Experience</a></li>
                     <li class="menu__list__item"><a href="#contact">Contact</a></li>
                 </ul>
-                <li class="menu__list__item__contact"><a href="#contact">willowitzy@gmail.com</a></li>
             </nav>
         </section>
 
-        <!-- Header/Title -->
+        <!-- Title -->
         <section class="title">
             <div class="title__div">
                 <img class="title__profile" src="assets\profile.png">
@@ -251,6 +268,7 @@
             </section>
     </div>
     <!-- JS -->
+    <script src="index.js"></script>
     <script src="validate.js"></script>
 </body>
 
